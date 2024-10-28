@@ -3,9 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a576612222.css" crossorigin="anonymous">
     <title>React Silicon</title>
   </head>
   <body>
+
+    <!-- NAVBAR BÖRJAR -->
+     
+<header>
+  <div class="container">
+
+    <a id="nav-logo" href="index.html">
+      <img src="images/Group-2.svg" alt="silicon logo"></a>
+
+      <nav id="main-menu" class="navbar">
+        <a class="nav-link" href="#">Features</a>
+      </nav>
+
+      <div id="darkmode-toggle-switch" class="btn-toggle-switch">
+        <span class="label">Dark mode</span>
+        <label for="darkmode-switch" class="toggle-switch">
+          <input id="darkmode-switch" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <button id="auth-signin" class="btn-primary">
+          <i class="fa-regular fa-user"></i>Sign in / up
+      </button> 
+
+      <button class="btn-mobile">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+  </div>
+</header>
+
+<!-- NAVBAR SLUTAR -->
+
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

@@ -639,7 +639,7 @@ header .container{
 
   .carousel{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
   .carousel-item{

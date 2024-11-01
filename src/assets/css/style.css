@@ -17,35 +17,50 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
+  background-color: var(--primary-background-color);
+}
+
+body.dark{
+  background-color: #22C55E;
 }
 
 .h1{
   font-size: 2.5rem;
   font-weight: 800;
+  color: var(--h1-color);
 }
 
 .h2{
   font-size: 2.25rem;
   font-weight: 800;
+  color: var(--h2-color);
 }
 
 .h3{
   font-size: 2rem;
   font-weight: 800;
+  color: var(--h3-color);
 }
 
 .h4{
   font-size: 1.5rem;
   font-weight: 800;
+  color: var(--h4-color);
 }
 
 .h5{
   font-size: 1.25rem;
   font-weight: 800;
+  color: var(--h5-color);
+}
+
+p{
+  color: var(--p-text);
+  
 }
 
 .underline{
-  color: var(--color-gray700);
+  color: var(--underline-color);
   font-weight: 400;
   font-size: 18px;
 }
@@ -87,6 +102,63 @@ body {
   --system-color-warning: #FFBA08;
   --system-color-info: #4C82F7;
   --filter-shadow: drop-shadow(0 0 0.75rem rgb(43, 23, 80));
+  --primary-background-color: #EFF2FC;
+  
+
+  --h1-color: #0B0F19;
+  --h2-color: #0B0F19;
+  --underline-color: #565973;
+  --link-gray800: #33354D;
+  --body-background: #0B0F19;
+  --p-text: black;
+  --download-app: #0B0F19;
+  --download-app-hover: #33354D;
+  --stars-color: #FFD43B;
+  --li-text-color: #0B0F19;
+  --body-faq: #F3F6FF;
+ 
+
+  --br-m: 0.375em;
+  --br-l: 0.5em;
+
+  --container-padding: 1rem;
+  --section-spacing: 4rem;
+  --transition-time: all 0.2s;
+}
+
+[data-theme="dark"] {
+  --color-gray900: #0B0F19; 
+  --color-gray800: #33354D;
+  --color-gray700: Black;
+  --color-gray600: #9397AD;
+  --color-gray500: #B4B7C9;
+  --color-gray400: #D4D7E5;
+  --color-gray300: #E2E5F1;
+  --color-gray200: #EFF2FC;
+  --color-gray100: #F3F6FF;
+  --color-white: #fff;
+  --color-gradient-linear: linear-gradient(0deg, rgba(99,102,241,0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
+  --system-color-error: #EF4444;
+  --system-color-success: #22C55E;
+  --system-color-warning: #FFBA08;
+  --system-color-info: #4C82F7;
+  --filter-shadow: drop-shadow(0 0 0.75rem rgb(152, 139, 177));
+  --primary-background-color: #0B0F19;
+
+  --h1-color: #fff;
+  --h2-color: #fff;
+  --h3-color: #fff;
+  --h4-color: #fff;
+  --h5-color: #fff;
+  --underline-color: #fff;
+  --link-gray800: #fff;
+  --p-text: #fff;
+  --link-color: #fff;
+  --download-app: #6366F1;
+  --download-app-text: black;
+  --download-app-hover: #33354D;
+  --li-text-color: #fff;
+  --body-faq: #0B0F19;
 
   --br-m: 0.375em;
   --br-l: 0.5em;
@@ -98,13 +170,8 @@ body {
 
 /* NAVBAR START */
 
-a {
-  color: var(--color-gray800);
-  text-decoration: none;
-}
-
 a:hover {
-  color: var(--color-gray800);
+  color: var(--link-gray800);
   text-decoration: underline;
 }
 
@@ -125,7 +192,7 @@ a:hover {
 }
 
 .nav-link {
-  color: var(--color-gray800);
+  color: var(--link-color);
   font-weight: 600;
   text-decoration: none;
 }
@@ -332,8 +399,8 @@ header .container{
 }
 
 .btn-download-app {
-  background-color: var(--color-gray900);
-  color: var(--color-white);
+  background-color: var(--download-app);
+  color: var(--download-app-text);
   border-radius: 8px;
   padding: 12px 25px;
   display: flex;
@@ -343,11 +410,11 @@ header .container{
 }
 
 .btn-download-app:hover {
-  background-color: var(--color-primary);
+  background-color: var(--download-app-hover);
 }
 
 .discover-more{
-  color: black;
+  color: var(--p-text);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -450,7 +517,7 @@ header .container{
 }
 
 .container-header{
-  color: var(--color-gray900);
+  color: var(--h2-color);
   font-size: xx-large;
 }
 
@@ -636,6 +703,7 @@ header .container{
   width: 100%;
   padding-top: 4rem;
   padding-bottom: 6rem;
+  background-color: var(--primary-background-color);
 
   .carousel{
     display: flex;
@@ -665,6 +733,7 @@ header .container{
   width: 100%;
   padding-left: var(--container-padding);
   padding-right: var(--container-padding);
+  background-color: var(--primary-background-color);
 }
 
 /* HOW DOES IT WORK END */
@@ -680,6 +749,7 @@ header .container{
   padding-top: 7rem;
 
   .transfer-check{
+    color: var(--li-text-color);
     justify-content: space-around;
     gap: 10rem 3rem;
   }
@@ -748,14 +818,13 @@ header .container{
   .group2{
     padding-top: 1.5rem;
   }
-
 }
 
 /* REVIEW BÖRJAN */
 
 
 .review-group{
-  background-color: var(--color-gray100);
+  /* background-color: var(--color-gray100); */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -763,6 +832,7 @@ header .container{
   box-sizing: border-box;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  background-color: var(--primary-background-color);
 
   .heading-review{
     box-sizing: border-box;
@@ -772,7 +842,7 @@ header .container{
 
   .review-fannie{
     box-shadow: 0 4px 4px 0 rgba(168, 166, 166, 0.2), 0 6px 20px 0 rgba(141, 141, 141, 0.19);
-    background-color: var(--color-white);
+    background-color: var(--primary-background-color);
     box-sizing: border-box;
     padding: 1.5rem;
     margin: 3rem;
@@ -820,7 +890,7 @@ header .container{
 .contact-container {
   display: flex;
   flex-direction: column;
-  background: white;
+  background: var(--body-faq);
   padding: 20px;
 
   .questions{
@@ -836,7 +906,7 @@ header .container{
 
 h1 {
   text-align: center;
-  color: var(--color-gray900);
+  color: var(--h1-color);
 }
 
 .button-container {
@@ -872,11 +942,13 @@ h1 {
 
 #phone-button{
   color: var(--color-primary);
+  background-color: var(--body-faq);
   font-family: manrope;
 }
 
 #chat-button{
   color: var(--system-color-success);
+  background-color: var(--body-faq);
   font-family: manrope;
 }
 
@@ -1039,6 +1111,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    background-color: var(--primary-background-color);
   }
 
   .credit{
@@ -1047,7 +1120,7 @@ footer {
 }
 
 .review-group{
-  background-color: var(--color-gray100);
+  /* background-color: var(--color-gray100); */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1064,7 +1137,7 @@ footer {
 
   .review-fannie{
     box-shadow: 0 4px 4px 0 rgba(168, 166, 166, 0.2), 0 6px 20px 0 rgba(141, 141, 141, 0.19);
-    background-color: var(--color-white);
+    /* background-color: var(--color-white); */
     box-sizing: border-box;
     padding: 1.5rem;
     margin: 3rem;
@@ -1093,6 +1166,6 @@ footer {
     }
 }
 
-
-
-
+.stars{
+color: var(--stars-color);
+}

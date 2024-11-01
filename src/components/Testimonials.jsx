@@ -20,7 +20,7 @@ const Testimonials = () => {
           return (
         <div className="review-fannie" key={i}>
           <img className="overline-quote1" src="src/assets/images/quotes.svg" alt=""/>
-          <div>           
+          <div className="starsbox">           
               <Stars stars={item.starRating} />
           </div>
           <h3 className="underline">{item.comment}</h3>

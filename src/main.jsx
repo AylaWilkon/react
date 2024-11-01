@@ -9,7 +9,7 @@ import HowDoes from './components/HowDoes.jsx'
 import Footer from './components/Footer.jsx'
 import BankPayments from './components/BankPayments.jsx'
 import Testimonials from './components/Testimonials.jsx'
-import DarkModeSwitch from './components/DarkModeSwitch.jsx'
+import FAQ from './components/FAQ.jsx'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
@@ -26,7 +26,7 @@ createRoot(document.getElementById('root')).render(
     <HowDoes />
     <BankPayments />
     <Testimonials />
+    <FAQ />
     <Footer />
-    {/* <DarkModeSwitch /> */}
   </StrictMode>,
 )

@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Stars ({stars}) {
   const starsArray = Array().fill('')
+  const starcolor = Array().fill('');
 
   for(let i=0; i < 5; i++)
     {
@@ -16,12 +17,10 @@ function Stars ({stars}) {
           starsArray.push("fa-regular fa-star")
         }
     }
-    
-    console.log(1)
   return (
   <div>
        {starsArray.map((item, index) => {
-          return (<FontAwesomeIcon icon={item} key={index} /> )})}
+          return (<FontAwesomeIcon icon={item} key={index} className='stars'/> )})}
   </div>) 
 }
 

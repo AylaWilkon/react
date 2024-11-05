@@ -10,23 +10,32 @@ import Footer from './components/Footer.jsx'
 import BankPayments from './components/BankPayments.jsx'
 import Testimonials from './components/Testimonials.jsx'
 import FAQ from './components/FAQ.jsx'
+import Subscribe from './components/Subscribe.jsx'
+import Contacts from './components/Contacts.jsx'
+import Location from './components/Location.jsx'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
+import { BrowserRouter } from "react-router-dom";
 
 
 library.add(fas, far)
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Navbar />
-    <Hero />
-    <Brands />
-    <Features />
-    <HowDoes />
-    <BankPayments />
-    <Testimonials />
-    <FAQ />
-    <Footer />
-  </StrictMode>,
+  <BrowserRouter>
+    <StrictMode>     
+      <Navbar />
+      <Hero />
+      <Brands />
+      <Features />
+      <HowDoes />
+      <BankPayments />
+      <Testimonials />
+      <FAQ />
+      <Contacts />
+      <Location />
+      <Subscribe />
+      <Footer />
+    </StrictMode>
+  </BrowserRouter>,
 )

@@ -116,6 +116,7 @@ p{
   --stars-color: #FFD43B;
   --li-text-color: #0B0F19;
   --body-faq: #F3F6FF;
+  --contact-text: #0B0F19;
  
 
   --br-m: 0.375em;
@@ -159,6 +160,7 @@ p{
   --download-app-hover: #33354D;
   --li-text-color: #fff;
   --body-faq: #0B0F19;
+  --contact-text: #F3F6FF;
 
   --br-m: 0.375em;
   --br-l: 0.5em;
@@ -881,9 +883,13 @@ header .container{
   gap: 20px;
   padding-top: 4rem;
   padding-bottom: 4rem;
+  margin-left: 20em;
+  margin-right: 20em;
+  background-color: var(--body-faq);
 
   .questions{
     display: flex;
+    background-color: var(--body-faq);
   }
 }
 
@@ -1137,7 +1143,6 @@ footer {
 
   .review-fannie{
     box-shadow: 0 4px 4px 0 rgba(168, 166, 166, 0.2), 0 6px 20px 0 rgba(141, 141, 141, 0.19);
-    /* background-color: var(--color-white); */
     box-sizing: border-box;
     padding: 1.5rem;
     margin: 3rem;
@@ -1168,4 +1173,91 @@ footer {
 
 .stars{
 color: var(--stars-color);
+}
+
+.contact-us-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  .contact-left{
+    display: grid;
+    padding: 3rem;
+
+    .fa-envelope{
+      color: var(--color-primary);
+    }
+
+    .fa-user-group{
+      color: var(--color-primary);
+    }
+
+    .contact-us-button{
+      font-family: manrope;
+      margin: 0 5px;
+      padding: 10px;
+      padding-bottom: 1rem;
+      color: var(--color-primary);
+      background-color: none;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-weight: 600;
+    }
+  }
+
+  .contact-right{
+    color: var(--contact-text);
+    overflow: visible;
+    margin-top: 4rem;
+    padding: 3rem;
+    box-shadow: 0 4px 4px 0 rgba(168, 166, 166, 0.2), 0 6px 20px 0 rgba(141, 141, 141, 0.19);
+    border-radius: 10px;
+
+    .form-consultation{
+      font-family: manrope;
+      display: flex;
+      width: 20rem;
+      border-radius: 5px;
+      border-color: #9397AD;
+      padding: .5rem;
+    }
+
+    .appointment-button{
+      font-family: manrope;
+      padding: 10px;
+      padding-bottom: 1rem;
+      display: flex;
+      width: 20rem;
+      border-radius: 5px;
+      color: var(--color-white);
+      background-color: var(--color-primary);
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+    }
+  }
+}
+
+.container-map{
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+
+  .fa-location-dot{
+    color: var(--color-primary);
+  }
+
+  .fa-phone{
+    color: var(--color-primary);
+  }
+  
+  .fa-clock{
+    color: var(--color-primary);
+  }
+
+  .adresses{
+    padding-left: 5rem;
+  }
 }

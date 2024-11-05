@@ -1,5 +1,6 @@
 import React from 'react'
 import DarkModeSwitch from './DarkModeSwitch.jsx'
+import { Link } from 'react-router-dom';
 
 function navbar() {
   return (
@@ -11,7 +12,8 @@ function navbar() {
       <img src="src/assets/images/Group-2.svg" alt="silicon logo"/></a>
 
       <nav id="main-menu" className="navbar">
-        <a className="nav-link" href="#">Features</a>
+        {/* <a className="nav-link" href="#">Features</a> */}
+        <Link to="/Contact">Contact</Link>
       </nav>
 
       <DarkModeSwitch />

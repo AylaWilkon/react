@@ -9,10 +9,11 @@ const FAQ = () => {
     });
   }, []);
 
-  function handleClick(id){
+  function handleClick(id, parentId){
     const answer= document.getElementById(id);
     answer.style.display=answer.style.display==='block' ? 'none' : 'block';
-  
+    const arrow = document.getElementById(parentId);
+    arrow.style.transform = answer.style.display === 'block' ? 'rotate(224deg)' : 'rotate(45deg)';
   }
 
   return (
@@ -51,14 +52,14 @@ const FAQ = () => {
     </div>
 
  
-    <div className="faq-container">
+    <div className="container">
     {FAQ?.map((item, i) => {
           return (
-            <div className="faq-item" key={item.id}>
+            <div className="faq-item" key={item.id} onClick={handleClick.bind(this, item.id,i)} >
             <h4 className="faq-question">
               {item.title}
-              <div className="arrow-background">
-                <span className="arrow" ></span>
+              <div className="arrow-background"  >
+                <span className="arrow" id={i}></span>
               </div>
             </h4>
             <p className="faq-answer" id={item.id}>{item.content}</p>

@@ -42,6 +42,7 @@ const Subscribe = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} noValidate>
+    <div className="container">
     <div className="subscribe-container">
       <div className="bell">
       <img src="src/assets/images/notification.svg" alt="A bell with a dot for notification"/>
@@ -60,6 +61,7 @@ const Subscribe = () => {
       </div>
       <span className="error-message">{errors.email && errors.email.message}</span>
   
+    </div>
     </div>
     </form>
   )

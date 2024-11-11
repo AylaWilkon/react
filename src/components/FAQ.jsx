@@ -18,7 +18,7 @@ const FAQ = () => {
 
   return (
 
-    <div>
+    <div className="container">
       
     <div className="container-faq">
     <div className="contact-container">

@@ -1,5 +1,5 @@
 import React from 'react'
-import navbar from './navbar'
+import navbar from './Navbar'
 
 
 const Contacts = () => {
@@ -10,14 +10,14 @@ const Contacts = () => {
       <div className="contact-left">
         <h1 className="h2">Contact Us</h1>
         <div className="email-us">
-          
-          <h3 className="h4"><i className="fa-light fa-envelope"></i>Email us</h3>
+          <button className="rounded-button"><i className="fa-light fa-envelope"></i></button>
+          <h3 className="h4">Email us</h3>
           <p>Please feel free to drop us a line. We will respond as soon as possible.</p>
           <button className="contact-us-button">Leave a message<i className="fa-solid fa-arrow-right"></i></button>
         </div>
         <div className="careers">
-          
-          <h3 className="h4"><i className="fa-light fa-user-group"></i>Careers</h3>
+          <button className="rounded-button"><i className="fa-light fa-user-group"></i></button>
+          <h3 className="h4">Careers</h3>
           <p>Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
           <button className="contact-us-button">Send an application<i className="fa-solid fa-arrow-right"></i></button>
         </div>

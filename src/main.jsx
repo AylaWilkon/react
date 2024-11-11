@@ -2,8 +2,8 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './assets/css/style.css'
 import Hero from './components/Hero.jsx'
-import Navbar from './components/navbar.jsx'
-import Brands from './components/brands.jsx'
+import Navbar from './components/Navbar.jsx'
+import Brands from './components/Brands.jsx'
 import Features from './components/Features.jsx'
 import HowDoes from './components/HowDoes.jsx'
 import Footer from './components/Footer.jsx'
@@ -32,10 +32,10 @@ createRoot(document.getElementById('root')).render(
       <BankPayments />
       <Testimonials />
       <FAQ />
-      <Contacts />
-      <Location />
       <Subscribe />
       <Footer />
+      <Contacts />
+      <Location />      
     </StrictMode>
   </BrowserRouter>,
 )

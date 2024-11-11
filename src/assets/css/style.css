@@ -84,6 +84,14 @@ p{
   margin-right: auto;
 }
 
+.container-testimonials {
+  width: 100%;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 :root {
   --color-gray900: #0B0F19; 
   --color-gray800: #33354D;
@@ -115,8 +123,16 @@ p{
   --download-app-hover: #33354D;
   --stars-color: #FFD43B;
   --li-text-color: #0B0F19;
-  --body-faq: #F3F6FF;
+  --body-faq: #Fff;
   --contact-text: #0B0F19;
+  --subscribe-bg: #F3F6FF;
+  --background-accordion: #fff;
+  --review-bg: #F3F6FF;
+  --review-test: #fff;
+  --faq-answer: #fff;
+  --bank-payments-bg: #fff;
+  --how-to-bg: #F3F6FF;
+  --features-bg: #fff;
  
 
   --br-m: 0.375em;
@@ -143,7 +159,6 @@ p{
   --system-color-success: #22C55E;
   --system-color-warning: #FFBA08;
   --system-color-info: #4C82F7;
-  --filter-shadow: drop-shadow(0 0 0.75rem rgb(152, 139, 177));
   --primary-background-color: #0B0F19;
 
   --h1-color: #fff;
@@ -161,6 +176,16 @@ p{
   --li-text-color: #fff;
   --body-faq: #0B0F19;
   --contact-text: #F3F6FF;
+  --subscribe-bg: #171b26;
+  --background-accordion: #171b26;
+  --review-bg: #171b26;
+  --text-accordion: #fff;
+  --review-test: #1e202c;
+  --faq-answer: #171b26;
+  --faq-answer-text: #fff;
+  --bank-payments-bg: #0B0F19;
+  --how-to-bg: #1e202c;
+  --features-bg: ;
 
   --br-m: 0.375em;
   --br-l: 0.5em;
@@ -554,6 +579,7 @@ header .container{
   text-align: center;
   padding-top: 7rem;
   padding-bottom: 7rem;
+  background-color: var(--features-bg);
 
     .iphone{
       display: none;
@@ -705,7 +731,7 @@ header .container{
   width: 100%;
   padding-top: 4rem;
   padding-bottom: 6rem;
-  background-color: var(--primary-background-color);
+  background-color: var(--how-to-bg);
 
   .carousel{
     display: flex;
@@ -743,6 +769,10 @@ header .container{
 
 
 /* BANK AND PAYMENTS START */
+
+.bank-payments{
+  background-color: var(--bank-payments-bg);
+}
 
 
 .upper-money-transfer{ 
@@ -834,7 +864,7 @@ header .container{
   box-sizing: border-box;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: var(--primary-background-color);
+  background-color: var(--review-bg);
 
   .heading-review{
     box-sizing: border-box;
@@ -844,33 +874,41 @@ header .container{
 
   .review-fannie{
     box-shadow: 0 4px 4px 0 rgba(168, 166, 166, 0.2), 0 6px 20px 0 rgba(141, 141, 141, 0.19);
-    background-color: var(--primary-background-color);
+    background-color: var(--review-test);
     box-sizing: border-box;
     padding: 1.5rem;
     margin: 3rem;
     position: relative;
 
-    .overline-quote1{
-      position: absolute;
-      bottom: 17rem;
-      right: 19rem;
-    }
   }
 
   .review-albert{
     box-shadow: 0 4px 4px 0 rgba(168, 166, 166, 0.2), 0 6px 20px 0 rgba(141, 141, 141, 0.19);
-    background-color: var(--color-white);
+    background-color: var(--review-test);
     box-sizing: border-box;
     padding: 1.5rem;
     margin: 3rem;
     position: relative;
     }
 
-    .overline-quote2{
+    .overline-quote{
       position: absolute;
-      bottom: 17rem;
-      right: 19rem;
+      bottom: 15rem;
+      right: 18rem;
     }
+
+
+}
+
+.author{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  .titles{
+    padding-left: 1rem;
+  }
 }
 
 /* REVIEW SLUTET */
@@ -883,8 +921,6 @@ header .container{
   gap: 20px;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  margin-left: 20em;
-  margin-right: 20em;
   background-color: var(--body-faq);
 
   .questions{
@@ -980,7 +1016,8 @@ h1 {
   border-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(168, 166, 166, 0.2), 0 6px 20px 0 rgba(141, 141, 141, 0.19);
   margin: 1;
-  background-color: var(--color-white);
+  color: var(--text-accordion);
+  background-color: var(--background-accordion);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1025,9 +1062,9 @@ h1 {
 .faq-answer {
   display: none;
   padding: 15px;
-  background-color: var(--color-white);
+  background-color: var(--faq-answer);
   font-size: 14px;
-  color: var(--color-gray700);
+  color: var(--faq-answer-text);
 }
 
 /* FAQ slutar */
@@ -1035,7 +1072,7 @@ h1 {
 /* SUBSCRIBE BÖRJAR */
 
 .subscribe-container{
-  background-color: var(--color-gray100);
+  background-color: var(--subscribe-bg);
   display: flex;
   flex-direction: row;
   align-content: stretch;
@@ -1183,6 +1220,11 @@ color: var(--stars-color);
   .contact-left{
     display: grid;
     padding: 3rem;
+
+    .rounded-button{
+      border-radius: 50%;
+      border-color: gray;
+    }
 
     .fa-envelope{
       color: var(--color-primary);

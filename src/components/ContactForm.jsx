@@ -2,7 +2,7 @@ import React from 'react'
 import navbar from './Navbar'
 
 
-const Contacts = () => {
+const ContactForm = () => {
   return (
     
 
@@ -16,10 +16,11 @@ const Contacts = () => {
           <button className="contact-us-button">Leave a message<i className="fa-solid fa-arrow-right"></i></button>
         </div>
         <div className="careers">
-          <button className="rounded-button"><i className="fa-light fa-user-group"></i></button>
+          
           <h3 className="h4">Careers</h3>
           <p>Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
           <button className="contact-us-button">Send an application<i className="fa-solid fa-arrow-right"></i></button>
+
         </div>
       </div>
 
@@ -45,4 +46,4 @@ const Contacts = () => {
   )
 }
 
-export default Contacts
+export default ContactForm

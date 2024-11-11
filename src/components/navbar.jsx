@@ -8,12 +8,12 @@ function navbar() {
 
   <div className="container">
 
-    <a id="nav-logo" href="index.html">
+    <a id="nav-logo" href="/">
       <img src="src/assets/images/Group-2.svg" alt="silicon logo"/></a>
 
       <nav id="main-menu" className="navbar">
-        {/* <a className="nav-link" href="#">Features</a> */}
-        <Link to="/Contact">Contact</Link>
+      <Link to="/features" className="nav-link" >Features</Link>
+        <Link to="/contact" className="nav-link" >Contact</Link>
       </nav>
 
       <DarkModeSwitch />

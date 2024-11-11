@@ -133,6 +133,11 @@ p{
   --bank-payments-bg: #fff;
   --how-to-bg: #F3F6FF;
   --features-bg: #fff;
+  --contact-bg: #F3F6FF;
+  --map-bg: #fff;
+  --form-bg: #fff;
+  --dm-bg: #fff;
+  --dm-bg-light: #F3F6FF;
  
 
   --br-m: 0.375em;
@@ -176,16 +181,21 @@ p{
   --li-text-color: #fff;
   --body-faq: #0B0F19;
   --contact-text: #F3F6FF;
-  --subscribe-bg: #171b26;
-  --background-accordion: #171b26;
-  --review-bg: #171b26;
+  --subscribe-bg: #151822;
+  --background-accordion: #151822;
+  --review-bg: #151822;
   --text-accordion: #fff;
-  --review-test: #1e202c;
-  --faq-answer: #171b26;
+  --review-test: #1e212b;
+  --faq-answer: #151822;
   --faq-answer-text: #fff;
   --bank-payments-bg: #0B0F19;
   --how-to-bg: #1e202c;
-  --features-bg: ;
+  --contact-bg: #0B0F19;
+  --map-bg: #1e202c;
+  --form-bg: #1e202c; 
+  --features-bg: #0B0F19;
+  --dm-bg: #0B0F19;
+  --dm-bg-light: #151822;
 
   --br-m: 0.375em;
   --br-l: 0.5em;
@@ -194,7 +204,13 @@ p{
   --section-spacing: 4rem;
   --transition-time: all 0.2s;
 }
+.container-brands{
+  background-color: var(--dm-bg);
+}
 
+.container-testimonials{
+  background-color: var(--dm-bg-light);
+}
 /* NAVBAR START */
 
 a:hover {
@@ -204,7 +220,6 @@ a:hover {
 
 .btn-toggle-switch .label{
   display: none;
-  /* darkmode, ska endast synas i desktop */
 }
 
 .btn-mobile{
@@ -222,6 +237,7 @@ a:hover {
   color: var(--link-color);
   font-weight: 600;
   text-decoration: none;
+  padding-left: 1rem;
 }
 
 .nav-link:hover {
@@ -1216,6 +1232,7 @@ color: var(--stars-color);
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  background-color: var(--contact-bg);
 
   .contact-left{
     display: grid;
@@ -1250,6 +1267,7 @@ color: var(--stars-color);
 
   .contact-right{
     color: var(--contact-text);
+    background-color: var(--form-bg);
     overflow: visible;
     margin-top: 4rem;
     padding: 3rem;
@@ -1286,6 +1304,7 @@ color: var(--stars-color);
   display: flex;
   justify-content: center;
   padding: 3rem;
+  background-color: var(--map-bg);
 
   .fa-location-dot{
     color: var(--color-primary);

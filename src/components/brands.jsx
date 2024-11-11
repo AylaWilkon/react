@@ -14,7 +14,8 @@ function brands() {
    ];
 
 
-  return (       
+  return ( 
+    <div className="container-brands">    
   <div className="container">
   <section id="brands">
     <div className="container-logo">
@@ -25,7 +26,7 @@ function brands() {
       ))}
     </div>
   </section>
-  </ div>
+  </ div></div>  
   )
 }
 

@@ -1,11 +1,15 @@
 import React from "react";
+import ContactForm from '../components/ContactForm.jsx'
+import Location from '../components/Location.jsx'
+import Navbar from '../components/Navbar.jsx'
 
 function ContactPage() {
   return (
-    <div>
-      <h1>Welcome to my website</h1>
-      <p>Here's some content for the homepage</p>
-    </div>
+    <>
+    <Navbar />
+    <ContactForm />
+    <Location />
+    </>
   );
 }
 

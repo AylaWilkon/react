@@ -963,7 +963,6 @@ header .container{
 }
 
 h1 {
-  text-align: center;
   color: var(--h1-color);
 }
 
@@ -1237,11 +1236,7 @@ color: var(--stars-color);
   .contact-left{
     display: grid;
     padding: 3rem;
-
-    .rounded-button{
-      border-radius: 50%;
-      border-color: gray;
-    }
+    width: 30rem;
 
     .fa-envelope{
       color: var(--color-primary);
@@ -1270,24 +1265,28 @@ color: var(--stars-color);
     background-color: var(--form-bg);
     overflow: visible;
     margin-top: 4rem;
-    padding: 3rem;
+    padding: 4rem;
     box-shadow: 0 4px 4px 0 rgba(168, 166, 166, 0.2), 0 6px 20px 0 rgba(141, 141, 141, 0.19);
     border-radius: 10px;
 
     .form-consultation{
       font-family: manrope;
+      margin: 1rem;
       display: flex;
       width: 20rem;
       border-radius: 5px;
       border-color: #9397AD;
-      padding: .5rem;
+      padding: .8rem;
     }
 
     .appointment-button{
       font-family: manrope;
+      justify-content: center;
       padding: 10px;
       padding-bottom: 1rem;
       display: flex;
+      margin-top: 7rem;
+      margin-bottom: 2rem;
       width: 20rem;
       border-radius: 5px;
       color: var(--color-white);
@@ -1305,20 +1304,74 @@ color: var(--stars-color);
   justify-content: center;
   padding: 3rem;
   background-color: var(--map-bg);
+}
+
+
+.adresses{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0rem 5rem;
+
+
+  .fa-clock{
+    color: var(--color-primary);
+    padding-right: 1rem;
+  }
 
   .fa-location-dot{
     color: var(--color-primary);
+    padding-right: 1rem;
   }
 
   .fa-phone{
     color: var(--color-primary);
-  }
-  
-  .fa-clock{
-    color: var(--color-primary);
+    padding-right: 1rem;
   }
 
-  .adresses{
-    padding-left: 5rem;
+  .socials{
+    padding-top: 3rem;
   }
+
+  .location-text{
+    padding: .4rem;
+  }
+
+  .location-text-2{
+    padding-left: 2.4rem;
+  }
+
+}
+
+.error-message{
+
+  color: red;
+  font-size: 0.9rem;
+}
+
+.contact-card{
+  display: grid;
+  justify-items: start;
+  margin: 1rem;
+  box-sizing: border-box;
+}
+
+.btn-primary-contact {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 8px;
+  padding: 15px 25px;
+  margin-top: 2rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-family: Manrope;
+}
+
+  .btn-primary-contact:hover {
+  background-color: var(--color-gray800);
+  color: var(--color-white);
+  text-decoration: none;
 }

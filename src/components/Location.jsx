@@ -26,7 +26,10 @@ const Location = () => {
         <img className="socials" src="src/assets/images/socials.svg"></img>
     </div> 
   </div>
+ 
   )
 }
+
+
 
 export default Location
